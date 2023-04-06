@@ -13,8 +13,8 @@ accommodated by the model.
 * https://research.facebook.com/blog/2017/2/prophet-forecasting-at-scale/#:~:text=At%20its%20core%2C%20the%20Prophet,selecting%20changepoints%20from%20the%20data.
 * https://facebook.github.io/prophet/docs/quick_start.html#python-api
 * https://peerj.com/preprints/3190/
-* Lewinson, E. (2022). Python for finance cookbook: Over 80 powerful recipes for effective financial data analysis. Packt Publishing.
 * Harvey, A. & Peters, S. (1990), ‘Estimation procedures for structural time series models’, Journal of Forecasting 9, 89–108.
+* Lewinson, E. (2022). Python for finance cookbook: Over 80 powerful recipes for effective financial data analysis. Packt Publishing.
 
 ## Set up:
 * Download necessary packages (see requirements file)
