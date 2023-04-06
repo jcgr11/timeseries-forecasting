@@ -14,6 +14,7 @@ accommodated by the model.
 * https://facebook.github.io/prophet/docs/quick_start.html#python-api
 * https://peerj.com/preprints/3190/
 * Lewinson, E. (2022). Python for finance cookbook: Over 80 powerful recipes for effective financial data analysis. Packt Publishing.
+* Harvey, A. & Peters, S. (1990), ‘Estimation procedures for structural time series models’, Journal of Forecasting 9, 89–108.
 
 ## Set up:
 * Download necessary packages (see requirements file)
