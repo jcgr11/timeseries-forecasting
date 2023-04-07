@@ -22,7 +22,7 @@ accommodated by the model.
 * To standardize the dataframe output for easier manipulation the time stamp was removed. The Date index was moved to the first column of the dataframe using df.reset_index(). The timestamp was redacted for the date values in new "Date" column
 * The the column names were adjusted to match the variables used in the prophet algorithm "ds" = date series and "y" = value series being forecasted.
 
-## Defining you training and testing sets:
+## Defining your training and testing sets:
 * The train_indices variable is used to define a boolean array called by comparing the date values in the ds column of the axp dataframe with the date string "2023-04-02". The result is True for the rows with dates earlier than "2023-04-02" and False for the rows with dates on or after "2023-04-02".
 * The df_train variable pulls the rows from the axp dataframe where the train_indices array is True, (rows with dates earlier than "2023-04-02"). 
 * The .loc function is used to select rows by boolean indexing. The resulting dataframe is assigned to df_train. 
