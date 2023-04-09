@@ -4,10 +4,10 @@
 $$y(t) = g(t) + s(t) + h(t) + ε<sub>t</sub>$$
 </p>
 
-* *g(t)* is the trend function which models non-periodic changes in the value of the
-time series, *s(t)* represents periodic changes (e.g., weekly and yearly seasonality), and
-*h(t)* represents the effects of holidays which occur on potentially irregular schedules over
-one or more days. The error term *ε<sub>t</sub>* represents any idiosyncratic changes which are not
+* $g(t)$ is the trend function which models non-periodic changes in the value of the
+time series, $s(t)$ represents periodic changes (e.g., weekly and yearly seasonality), and
+$h(t)$ represents the effects of holidays which occur on potentially irregular schedules over
+one or more days. The error term $ε<sub>t</sub>$ represents any idiosyncratic changes which are not
 accommodated by the model.
 #### References
 * https://research.facebook.com/blog/2017/2/prophet-forecasting-at-scale/#:~:text=At%20its%20core%2C%20the%20Prophet,selecting%20changepoints%20from%20the%20data.
