@@ -1,7 +1,7 @@
 # Timerseries forecasting with Meta's Prophet algorithm
 #### The base regression formula used by the model is a decomposable time series model (Harvey & Peters 1990) with three main model components: trend, seasonality, and holidays. The base regression formula for the prophet algorithm is: 
 <p align="center">
-y(t) = g(t) + s(t) + h(t) + ε<sub>t</sub>
+$$y(t) = g(t) + s(t) + h(t) + ε<sub>t</sub>$$
 </p>
 
 * *g(t)* is the trend function which models non-periodic changes in the value of the
