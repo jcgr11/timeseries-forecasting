@@ -18,14 +18,14 @@ accommodated by the model.
 
 ## Set up:
 * Download necessary packages (see requirements file)
-* Download historical daily price dataframe using yf.download() functon for defined ticker, start, and end date. Both attempts generated a balanced fit trendline at approximately 3 years of data for the 2 two securities tested. More or less data seemed display imbalanced nature (over/under fit).
+* Download historical daily price dataframe using yf.download() function for defined ticker, start, and end date. Both attempts generated a balanced fit trendline at approximately 3 years of data for the 2 two securities tested. More or less data seemed display imbalanced nature (over/under fit).
 * To standardize the dataframe output for easier manipulation the time stamp was removed. The Date index was moved to the first column of the dataframe using df.reset_index(). The timestamp was redacted for the date values in new "Date" column
-* The the column names were adjusted to match the variables used in the prophet algorithm "ds" = date series and "y" = value series being forecasted.
+* The column names were adjusted to match the variables used in the prophet algorithm "ds" = date series and "y" = value series being forecasted.
 
 ## Defining your training and testing sets:
-* The train_indices variable is used to define a boolean array called by comparing the date values in the ds column of the axp dataframe with the date string "2023-04-02". The result is True for the rows with dates earlier than "2023-04-02" and False for the rows with dates on or after "2023-04-02".
+* The train_indices variable is used to define a Boolean array called by comparing the date values in the ds column of the axp dataframe with the date string "2023-04-02". The result is True for the rows with dates earlier than "2023-04-02" and False for the rows with dates on or after "2023-04-02".
 * The df_train variable pulls the rows from the axp dataframe where the train_indices array is True, (rows with dates earlier than "2023-04-02"). 
-* The .loc function is used to select rows by boolean indexing. The resulting dataframe is assigned to df_train. 
+* The .loc function is used to select rows by Boolean indexing. The resulting dataframe is assigned to df_train. 
 * The .dropna() function is then used to remove any rows with missing values from the df_train dataframe.
 * the df_variable selects the rows from the axp dataframe where the train_indices array is False, meaning the rows have dates on or after "2023-04-02". The ~ symbol inverts the boolean values in train_indices, so that False becomes True and vice versa. The resulting dataframe is assigned to df_test. The .reset_index(drop=True) function is used to reset the index of df_test so that it starts from 0 and drops the old index.
 
