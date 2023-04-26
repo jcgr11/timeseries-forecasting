@@ -9,12 +9,6 @@ time series, $s(t)$ represents periodic changes (e.g., weekly and yearly seasona
 $h(t)$ represents the effects of holidays which occur on potentially irregular schedules over
 one or more days. The error term $ε$<sub>$t$</sub> represents any idiosyncratic changes which are not
 accommodated by the model.
-#### References
-* Prophet: Forecasting at Scale - Meta Research. Meta Research. (2017). https://research.facebook.com/blog/2017/2/prophet-forecasting-at-scale/#:~:text=At%20its%20core%2C%20the%20Prophet,selecting%20changepoints%20from%20the%20data. 
-* Quick start. Prophet. (2023). https://facebook.github.io/prophet/docs/quick_start.html#python-api 
-* Taylor SJ, Letham B. (2017). Forecasting at scale. PeerJ Preprints 5:e3190v2 https://doi.org/10.7287/peerj.preprints.3190v2
-* Harvey, A. & Peters, S. (1990). ‘Estimation procedures for structural time series models’, Journal of Forecasting 9, 89–108.
-* Lewinson, E. (2022). Python for finance cookbook: Over 80 powerful recipes for effective financial data analysis. Packt Publishing.
 
 ## Set up:
 * Download necessary packages (see requirements file)
@@ -57,3 +51,10 @@ accommodated by the model.
 * The last lines of this scripts lines of code format the x-axis ticks, set the x-axis limits, add gridlines, and set the title and axis labels of the plot.
 * The resulting plot shows the actual timeseries (blue line) and predicted timeseries (orange line) values of the time series, along with the upper (Green boundary) and lower (Red boundary) bounds of the uncertainty interval (shaded blue area). 
 * The forecasted_value variable holds the last value (predicted stock price on the last date of the prediction) which is located using .iloc[-1, 1] to located the value at the intersection of the last row and second column of the dataframe.
+
+#### References
+* Prophet: Forecasting at Scale - Meta Research. Meta Research. (2017). https://research.facebook.com/blog/2017/2/prophet-forecasting-at-scale/#:~:text=At%20its%20core%2C%20the%20Prophet,selecting%20changepoints%20from%20the%20data. 
+* Quick start. Prophet. (2023). https://facebook.github.io/prophet/docs/quick_start.html#python-api 
+* Taylor SJ, Letham B. (2017). Forecasting at scale. PeerJ Preprints 5:e3190v2 https://doi.org/10.7287/peerj.preprints.3190v2
+* Harvey, A. & Peters, S. (1990). ‘Estimation procedures for structural time series models’, Journal of Forecasting 9, 89–108.
+* Lewinson, E. (2022). Python for finance cookbook: Over 80 powerful recipes for effective financial data analysis. Packt Publishing.
